@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Sample Calculator</title>
+	<style type="text/css">@import "../themes/css/terrafeed.css";</style>
+	<script src="../js/jquery-2.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="../js/pdfobject_min.js" type="text/javascript"></script>
+
+	
+	<script src="../js/ReportViewer.js" type="text/javascript"></script>
+	<script src="../js/TerraReportViewer.js" type="text/javascript"></script>
+	
+</head>
+
+<body class="ui-widget ui-front ui-widget-content ui-corner-all">
+
+	<div style="position: relative; width: 96%; height: 800px; padding:1% 2%; overflow: hidden;">
+		<center><h2 class="demoHeaders">Sulfur Carb 35 Calculator</h2></center>
+	
+		<p>pH: &nbsp; <input type="text" size="20" name="pH" id="pH"></input>
+		<p>Conductivity dS/m: &nbsp; <input type="text" size="20" name="conductivity" id="conductivity"></input>
+		<p>Sodium ppm: &nbsp; <input type="text" size="20" name="sodium" id="sodium"></input>
+		<p>Potassium ppm: &nbsp; <input type="text" size="20" name="potassium" id="potassium"></input>
+		<p>Calcium ppm: &nbsp; <input type="text" size="20" name="calcium" id="calcium"></input>
+		<p>Magnesium ppm: &nbsp; <input type="text" size="20" name="magnesium" id="magnesium"></input>
+		<p>Carbonate ppm: &nbsp; <input type="text" size="20" name="carbonate" id="carbonate"></input>
+		<p>Bicarbonate ppm: &nbsp; <input type="text" size="20" name="bicarbonate" id="bicarbonate"></input>
+	
+		<p>Target Treated Water (gal.) 27,250 gal ~ 1 acre inch: &nbsp; <input type="text" size="20" name="targetWater" id="targetWater"></input>
+	
+		<p>
+		<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style='margin: 2px;' type="button" name="Generate" id="generate" title="Generate report for Sulfur Carb 35">
+			<span class="ui-button-text">Generate Report</span>
+		</button>					
+	</div>
+
+</body>
+
+<script type='text/JavaScript'>
+	
+	$(document).ready(function() {
+		
+		$("#generate" ).click(function() {
+			var reportViewer = ReportViewer.getReportViewer();
+			reportViewer.displayReport();
+			
+			/*
+	    	var url = '../api/v1/reports/sulfurcarb35';
+	    	var method = 'GET';
+			$.ajax({
+				type: method
+				, async: false
+				, cache: false
+				, url: url
+				, data: {
+				}
+				, success : function(response, textStatus, xhr) {
+				},
+				error : function(xhr, textStatus, errorThrown) {
+					alert("error: " + textStatus);
+				}
+			});    	
+			*/
+			
+		});
+		
+	});
+</script>
+</html>

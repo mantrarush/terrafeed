@@ -1,0 +1,543 @@
+/*
+-----------------------------------------------
+Solutions for Your Life (UF/IFAS Extension)--css for main page
+----------------------------------------------- */
+a {
+	text-decoration: none;
+	color: #1f39a4;
+}
+
+a.lab {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FFFFFF;
+}
+
+a:hover {
+	color:#ff6730;
+}
+
+a img {
+	border-width:0;
+}
+
+h1, h2, h3, ul, li, form {
+	margin:0;
+	padding:0;
+}
+
+h1 img {
+	border: 0px;
+}
+
+.bulletlist ul {
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style: none;
+}
+	
+.bulletlist li {
+	padding-left: 5px;
+	margin-left:5px;
+	background-image: url(http://solutionsforyourlife.ufl.edu/images/blkcircle.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 8px;
+	list-style-position: outside;
+ }
+ 
+ /*hide dynamic Addthis div ------------------------------------------------------------------*/
+ #atff {display:none;}
+ 
+/* =page  Centers page in browser
+----------------------------------------------- */
+#page {
+	width:754px;
+	margin:0 auto;
+}
+
+#uf_bar {
+	background-image: url(http://solutionsforyourlife.ufl.edu/images/background_header.gif);
+	height: 41px;
+	margin: 0;
+}
+
+/* =page2  Controls width of page, background and border
+-------------------------------------------------------- */
+#page2 {
+	float:left;
+	width:750px;
+	margin: 0px;
+	padding: 0px;
+	/*border-top: 1px solid #1f39a4;*/
+	background-color: #ffffff;
+}
+
+/* =header (contains IFAS Solutions for your life banner)
+----------------------------------------------- */
+#header img {
+	float:left;
+	width:750px;
+	height:170px;
+	padding:0px;
+	background-color: #FFFFFF;
+}
+  
+/* =search
+----------------------------------------------- */
+#search {
+	float:right;
+	display:block;
+	width:180px;
+	font-style:normal;
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+
+#searchbox {
+	float: right;
+	padding-right:5px;
+	padding-bottom:2px;
+	padding-top:0px;
+	margin-top:-4px;
+}
+
+.button {
+	padding-top:0px;
+	position:relative;
+	top: 5px;
+}
+
+#search label img {
+ 	display:block;
+	margin-bottom:2px;
+}
+  
+#searchtext {
+	float:left;
+	width:130px;
+	border:1px solid;
+	border-color:#999 #fff #fff #999;
+	padding: 2px 0px 2px 5px;
+}
+
+/*Skip navigation
+------------------------*/
+.skipNav {
+	position:absolute;
+ 	left:0px;
+ 	top:-500px;
+ 	width:1px;
+ 	height:1px;
+ 	overflow:hidden;
+ }
+
+/* =topnav  (top-navigation bar)
+----------------------------------------------- */
+#topnav {
+	float:left;
+	list-style:none;
+	background-color: #223c92;
+	width: 100%;
+	margin: 0px;
+	padding: 3px 0px 1px 0px;
+}
+ 
+#topnav li {
+	display:inline;
+	padding:0;
+	font-weight: bold;
+	font-size: 85%;
+}
+
+#topnav li a {
+	float:left;
+	width:auto;
+	padding:1px 4px 4px 11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+  
+#topnav li a:hover {
+	color:#ff6730;
+}
+  
+/* =content  (contains all non-header content; extends leftnav bkgrnd down left side of page)
+----------------------------------------------- */
+#content {
+	float:left;
+	width:750px;
+	background-image: url(http://solutionsforyourlife.ufl.edu/images/background_leftnav1.gif);
+	background-repeat: repeat-y;
+}
+  
+#content-group {
+ 	float:right;
+ 	width:525px;
+}
+  
+#content-sub {
+	float:left;
+	width: 220px;
+	padding: 5px 5px 0px 0px;
+	background-color: #e2e6f4;
+}  
+  
+/* =leftnav  Main Navigation
+----------------------------------------------- */
+#leftnav {
+	font-size: 105%;
+	line-height: 110%;
+	padding: 0px 0px 5px 0px;
+	background-color: #e2e6f4;
+}
+
+#leftnav ul {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 5px;
+}
+
+#leftnav ul li ul {
+	margin-left:10px;
+	line-height:115%;
+}
+
+#leftnav ul li ul li {
+	background-image: none;
+	padding-left:0px;
+	font-size: 75%;
+	font-weight: normal;
+	padding-bottom: 5px;
+	list-style-type: none;
+	display:inline;
+}
+
+#leftnav li a {
+	text-decoration:none;
+}
+
+.leftnavmaintopic {
+	font-weight: bold;
+	list-style-type: none;
+	padding-top:5px;
+}
+
+.leftnavmaintopic li {
+	padding-bottom: 12px;
+}
+
+.leftnavsubtopic li {
+	font-weight: normal;
+	padding-top: 5px;
+	padding-bottom:0px;
+	list-style-type: none;
+	margin-left: 15px;
+	display:inline;
+}
+
+.rss-icon {
+	padding-top:16px;
+}
+
+/* =content-main (center column content)
+----------------------------------------------- */
+#content-main {
+	float:left;
+	width:320px;
+	background-color: #FFFFFF;
+	padding-left:0px;
+}
+
+p.intro {
+	font-size: 95%;
+	line-height: 145%;
+	font-weight:bold;
+	padding: 10px 0px 10px 15px;
+	margin:0px;
+	text-align:center;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.image-left {
+	float:left;
+}
+
+.image-right {
+	float:right;
+}
+
+.text-center {
+	text-align:center;
+}
+
+/* =hotissue (container around hot issue topic content)
+----------------------------------------------- */
+.hotissue {
+	padding: 11px 5px 5px 5px;
+}
+
+.hotissue h2 {
+	border-bottom: 1px #ff6730 solid;
+	font-size: 100%;
+	line-height:130%;
+	color: #1f39a4;
+	margin-left: 10px;
+}
+
+.hotissue p {
+	font-size: 80%;
+	line-height:160%;
+	margin: 0px 0px 0px 81px;
+	padding: 2px 0px 12px 0px;
+}
+
+.hotissue p a {
+	font-size: 105%;
+	color: #ff6730;
+	font-weight: bold;
+}
+
+.hotissue p a:hover {
+	color: #1f39a4;
+}
+
+.hotissue img {
+	float: left;
+	border-right: 10px #fff solid;
+	padding-right: 0px;
+}
+ 
+/*navigation within main content area - orange arrows
+----------------------------------------------------- */
+ul.arrowlist {
+	float:right;
+	margin-right:20px;
+	list-style: none;
+	clear:both;
+	margin-bottom:5px;
+}
+	
+.arrowlist li {
+ 	font-size:80%;
+	background-image: url(http://solutionsforyourlife.ufl.edu/images/arrow_rightcolumn.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	padding-left: 25px;
+	margin-left:10px;
+	list-style-position: outside;
+}
+
+.arrowlist li a {
+	font-size: 100%;
+	color: #ff6730;
+	font-weight: bold;
+}
+
+/* =content-extra  (Controls right column of page)
+----------------------------------------------- */
+#content-extra {
+	float:right;
+	width:190px;
+}
+
+#content-extra h3 {
+	color: #1f39a4;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+	font-size: 100%;
+}
+
+#content-extra h3 a {
+	color: #1f39a4;
+}
+
+#content-extra h3 a:hover{
+	color:#ff6730;
+}
+
+#content-extra p {
+	line-height:140%;
+	font-size:80%;
+}
+
+#content-extra p a:hover{
+	color:#1f39a4;
+}
+
+#content-extra ul {
+	padding: 5px 0px 5px 5px;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#content-extra ul li {
+	background-image: url(http://solutionsforyourlife.ufl.edu/images/arrow_morestories.gif);
+	background-repeat: no-repeat;
+	list-style-image: none;
+	list-style-type: none;
+	line-height: 125%;
+	padding: 5px 0px 5px 15px;
+	background-position: 0px 6px;
+	margin-left: 0px;
+}
+
+.rightinfobox {
+	border: 1px solid #fdcbb3;
+	margin: 0px 10px 5px 0px;
+	padding: 5px 5px 6px 10px; 
+	background-color: #f6f6f6;
+}
+	
+.rightinfobox img {
+	float:right
+}
+
+.rightinfobox-no-header {
+	border: 1px solid #fdcbb3;
+	margin: 20px 10px 20px 0px;
+	padding: 5px 5px 6px 10px; 
+	background-color: #f6f6f6;
+}
+	
+.rightinfobox-no-header img {
+	float:right
+}
+
+.rtboxlargertext {
+	font-size: 110%;
+}
+
+/* =contentextrabottom (holds Research and CALS links list)
+----------------------------------------------- */
+#contentextrabottom {
+	padding-bottom: 15px;
+}
+
+/* .events: (holds calendar and events)
+-----------------------------------------------------------------------*/
+.events {
+	border: 1px solid #fdcbb3;
+	padding: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	background-color: #f6f6f6;
+	margin-bottom: 5px;
+}
+
+.events h3 {
+	padding-top: 0px;
+}
+
+.events p {
+	font-size: 80%;
+	margin: 0px 8px 10px 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.events p a {
+	color:#ff6730;
+	font-weight:bold;
+}
+	
+.events ul {
+	margin-left: 0px;
+	margin-right: 5px;
+	padding: 0px;
+}
+
+.events li {
+	font-size:100%;
+	padding-right: 5px;
+}
+	
+.events li a {
+	font-weight:normal;
+}
+
+.events img {
+	float:right;
+	padding: 13px 13px 3px 3px;
+	margin: 0px;
+}
+
+/* =RSS Feeds box
+----------------------------------------------- */
+.rss {
+	border: 1px solid #fdcbb3;
+	padding: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	background-color: #f6f6f6;
+	margin-bottom: 6px;
+}
+
+.rss img {
+	float:left;
+	padding: 2px 8px 3px 3px;
+	margin: 0px;
+}
+
+.rss p {
+	font-size: 80%;
+	line-height:200%;
+	margin: 5px 5px 5px 0px;
+	padding: 5px 5px 5px 5px;
+}
+	
+.rss p a {
+	color: #1f39a4;
+}
+
+/* =footer 
+----------------------------------------------- */
+#footer {
+	float:left;
+	width:100%;
+	color: #FFFFFF;
+	font-size: 70%;
+	padding-top: 17px;
+	padding-bottom: 0px;
+	background: #223c92 url(http://solutionsforyourlife.ufl.edu/images/footer.gif) repeat-x;
+	background-position: top left;
+}
+
+#footer p {
+	float:right;
+	margin: 0px;
+	line-height: normal;
+	padding: 5px 30px 10px 10px;
+	display: inline;
+}
+
+/*#footer p img {
+	clear:none;
+	display: inline;
+}*/
+
+#footer ul {
+	float:left;
+	padding-left:13px;
+	display: inline;
+	vertical-align:top;
+}
+
+#footer li {
+	font-size: 110%;
+	padding-right: 4px;
+	padding-top: 5px;
+	display: inline;
+}
+  
+#footer a {
+	color: #FFFFFF;
+}
+ 
+#footer a:hover {
+	color: #ff6730;
+}
